@@ -352,47 +352,48 @@ ol {
  
 /* Improving the responsivness */
 
-/* Existing CSS here */
-
 /* Media query for small screens */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
   }
 
+  header img {
+    width: 6rem;
+  }
+
   #game-container {
-    max-width: 90%;
     padding: 1rem;
   }
 
-  /* Adjusted styles for smaller screens */
-  #players li {
-    flex: 0 0 100%;
-    margin-bottom: 0.5rem;
+  #players {
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
   }
 
-  .player-name {
-    font-size: 0.8rem;
-    width: 100%;
-  }
-
+  .player-name,
   .player input {
-    font-size: 0.8rem;
-    width: 100%;
+    width: 40%;
+    font-size: 0.5rem;
+  }
+
+  #players li {
+    flex: 0 0 40%;
   }
 
   #game-board button {
-    width: 5rem;
-    height: 5rem;
-    font-size: 2.5rem;
-  }
-
-  #game-over h2 {
+    width: 4rem;
+    height: 4rem;
     font-size: 2rem;
   }
 
+  #game-over h2 {
+    font-size: 2.5rem;
+  }
+
   #game-over p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   #log {
@@ -401,11 +402,11 @@ ol {
   }
 
   #game-hints h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   #game-hints button {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 }
 
@@ -416,7 +417,7 @@ ol {
   }
 
   header img {
-    width: 6rem;
+    width: 5rem;
   }
 
   #game-container {
@@ -424,32 +425,26 @@ ol {
   }
 
   #players li {
-    flex: 0 0 100%;
     margin-bottom: 0.5rem;
   }
 
-  .player-name {
-    font-size: 0.7rem;
-    width: 100%;
-  }
-
+  .player-name,
   .player input {
     font-size: 0.7rem;
-    width: 100%;
   }
 
   #game-board button {
-    width: 4rem;
-    height: 4rem;
-    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
 
   #game-over h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   #game-over p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   #log {
@@ -458,10 +453,10 @@ ol {
   }
 
   #game-hints h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   #game-hints button {
-    margin-top: 0.3rem;
+    margin-top: 0.5rem;
   }
 }
